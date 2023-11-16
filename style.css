@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* Stawix */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    color-scheme: dark light;
+    --bg-color: yellow;
+    --price-clr:hsl(180, 100%, 94%,0.6);
+    --link-clr:blue;
+    --font-ff:'Roboto', sans-serif;
+    --font-ff2:'Poppins', sans-serif;
+
+}
+body{
+    font: 1.6rem var(--font-ff) ;
+    color:black;
+    background-color: var(--bg-color);
+    text-transform: capitalize;
+}
+h3,
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+.heading{
+
+    height:62px;
+}
+/* custom properties */
+.d-flex{
+    display: flex;
+}
+.d-flex-col{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+
+    
+
+.subscription__container{
+    /* width: 100%; */
+  display:flex;
+  /* flex-direction: column-reverse; */
+  flex-wrap: nowrap;
+  gap:1em;
+}
+.subscription{
+  width:250px;
+  padding:1em 2em;
+  background-color:white;
+  gap:1.5em;
+}
+.new-subscription{
+    position: relative;
+    transform-origin: 100% 0;
+}
+.new{
+    text-align: center;
+    width:120px;
+    position:fixed;
+    top:0;
+    left: 0;
+    padding: 0.2em 2em 0.2em 1em;
+    transform:translate(-29.3%) rotate(-45deg);
+    background-color: yellow;
+}
+.sub-text{
+    height:280px;
+}
+.price{
+  width:100%;
+  padding: 0 1em;
+  background-color:var(--price-clr);
+}
+.price h3, 
+.price p{
+  text-align: center;
+  }
+.price p:nth-child(2){
+  font-size:6rem;
+} 
+.price p:nth-child(3){
+  color: blue;
+} 
+
+.link{
+    color: var(--link-clr);
+    width:100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+@keyframes shake {
+    0%,100%{
+        transform: translateX(0);
+    }
+    20%,40%,60%,80%{
+        transform: translateX(-5px);
+    }
+    30%,50%,70%,90%{
+        transform: translateX(5px);
+    }
+}
+/* mobile */
+@media (max-width: 481px){
+    .carousel-indicators [data-bs-target]{
+        height:7px;
+    }
+    .new{
+        display: none;}
+    .carousel-item{
+    padding: 0;
+    }
+.subscription__container{
+
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    gap: .5em;
+    
+}
+.carousel-indicators{
+    position: relative;
+}
+
+.subscription{
+    padding: 0.3em 1em;
+    width: 100%;
+    height: 100%;
+}
+}
