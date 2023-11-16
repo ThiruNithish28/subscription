@@ -115,12 +115,18 @@ h2{
 /* mobile */
 @media (max-width: 481px){
     .carousel-indicators [data-bs-target]{
-        height:7px;
+         height:10px;
+        width: 10px;
+        background-color:black ;
+        border:1px solid black;
+        border-radius:50%;
     }
     .new{
         display: none;}
     .carousel-item{
     padding: 0;
+      margin-top:1em;
+      margin-bottom:1em;
     }
 .subscription__container{
 
