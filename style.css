@@ -13,7 +13,7 @@
 :root{
     font-size: 62.5%;
     color-scheme: dark light;
-    --bg-color: yellow;
+    --bg-color: #fbcb34;
     --price-clr:hsl(180, 100%, 94%,0.6);
     --link-clr:blue;
     --font-ff:'Roboto', sans-serif;
