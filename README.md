@@ -1,4 +1,4 @@
-# Carousel :
+# Responsive Carousel :
   when i randomly apply for a internship they give me some task. 
 This is also one of thoes task " creating subcripiton carousel ".
 Which is responsive manner( Which means supported for both desktop and mobile version).
